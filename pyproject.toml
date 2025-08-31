@@ -1,4 +1,4 @@
-1[project]
+[project]
 name = "ecomm-mcp-prod-assistant"
 version = "0.1.0"
 description = "This is project to understand about MCPs and workflows"
