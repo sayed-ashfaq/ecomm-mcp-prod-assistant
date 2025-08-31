@@ -1,14 +1,13 @@
 import importlib.metadata
-
-packages= [
+packages = [
     "langchain",
     "python-dotenv",
-    "langchain_core"
+    "langchain_core",
+    "streamlit"
 ]
-
-for package in packages:
+for pkg in packages:
     try:
-        version = importlib.metadata.version(package)
-        print(f"{package}: {version}")
-    except:
-        
+        version = importlib.metadata.version(pkg)
+        print(f"{pkg}=={version}")
+    except importlib.metadata.PackageNotFoundError:
+        print(f"{pkg} (not installed)")
